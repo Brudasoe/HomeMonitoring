@@ -57,10 +57,10 @@ public class Servant extends UnicastRemoteObject implements HomeInterface {
     public String turnOnLights() throws RemoteException {
         if (lightsState){
             message = "Lights already on";
-            lightsState = false;
         }
         else{
             message = "Lights off, turning them on";
+            lightsState = false;
         }
         return message;
     }
