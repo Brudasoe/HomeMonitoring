@@ -36,7 +36,7 @@ public class Controller implements Initializable {
         HomeInterface stub=(HomeInterface) reg.lookup("Server");
         double temp = stub.checkTemp();
         tempbar.setProgress(temp);
-        templabel.setText(String.valueOf(Math.round(temp*32)));
+        templabel.setText(String.valueOf(Math.round(temp*32))+" °C");
     }
 
     @FXML
