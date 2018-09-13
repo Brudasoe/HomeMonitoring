@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="288.0" prefWidth="598.0">
+         <children>
+            <ProgressBar fx:id="tempbar" layoutX="311.0" layoutY="232.0" prefHeight="18.0" prefWidth="160.0" progress="0.0" />
+            <Button fx:id="closedoors" layoutX="344.0" layoutY="53.0" mnemonicParsing="false" onAction="#buttonCloseDoors" text="CLOSE DOORS" />
+            <Button fx:id="opendoor" layoutX="309.0" layoutY="87.0" mnemonicParsing="false" onAction="#buttonOpenCloseDoor" text="OPEN/CLOSE FRONT DOOR" />
+            <Button fx:id="checkagd" layoutX="311.0" layoutY="128.0" mnemonicParsing="false" onAction="#buttonCheckAGD" text="CHECK HOME APPLIANCES" />
+            <Label fx:id="infofield" layoutX="29.0" layoutY="168.0" prefHeight="109.0" prefWidth="224.0" text="INFO" wrapText="true" />
+            <Label layoutX="352.0" layoutY="205.0" text="TEMPERATURE" />
+            <Label fx:id="templabel" layoutX="483.0" layoutY="232.0" text="0.0* C" />
+            <Button fx:id="garageopen" layoutX="33.0" layoutY="28.0" mnemonicParsing="false" onAction="#buttonOpenGarage" text="GARAGE DOOR OPEN" />
+            <Button fx:id="lightsoff" layoutX="43.0" layoutY="132.0" mnemonicParsing="false" onAction="#buttonTurnOffLights" text="TURN OFF LIGHTS" />
+            <Button fx:id="buttontemp" layoutX="324.0" layoutY="168.0" mnemonicParsing="false" onAction="#buttonCheckTemperature" text="CHECK TEMPERATURE" />
+            <Button fx:id="garageclose" layoutX="29.0" layoutY="65.0" mnemonicParsing="false" onAction="#buttonCloseGarage" text="GARAGE DOOR CLOSE" />
+            <Button fx:id="lightson" layoutX="43.0" layoutY="99.0" mnemonicParsing="false" onAction="#buttonTurnOnLights" text="TURN ON LIGHTS" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
